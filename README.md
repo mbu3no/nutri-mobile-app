@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+# NutriApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo mobile desenvolvido com Expo e React Native para cálculo de macronutrientes e necessidades diárias com base em dados físicos do usuário.
 
-## Get started
+O app foi criado como projeto prático vinculado à UNIFEI (Universidade Federal de Itajubá), com foco em nutrição aplicada. A partir do peso, altura e idade, calcula uma estimativa de proteína diária, consumo de água e gasto calórico basal.
 
-1. Install dependencies
+## Funcionalidades
 
-   ```bash
-   npm install
-   ```
+- Tela inicial com acesso rápido ao WhatsApp para agendamento de consulta e localização da clínica no Google Maps
+- Formulário de entrada com validação dos campos numéricos
+- Cálculo automático de proteína, hidratação e calorias com base na fórmula de Mifflin-St Jeor
+- Navegação fluida entre telas com Expo Router
 
-2. Start the app
+## Tecnologias
 
-   ```bash
-   npx expo start
-   ```
+- Expo 53
+- React Native 0.79
+- React 19
+- Expo Router 5
+- TypeScript
 
-In the output, you'll find options to open the app in a
+## Como rodar o projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Instale as dependências:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Inicie o servidor de desenvolvimento:
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+No terminal aparecerão as opções para abrir o app no emulador Android, simulador iOS ou pelo aplicativo Expo Go no seu celular.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Para rodar diretamente em uma plataforma específica:
 
-## Join the community
+```bash
+# Android
+npm run android
 
-Join our community of developers creating universal apps.
+# iOS
+npm run ios
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Web
+npm run web
+```
